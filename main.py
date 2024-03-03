@@ -89,10 +89,12 @@ if attackWins != 0:
     expectedAttackersStanding = attackersRemaining/attackWins
 else:
     expectedAttackersStanding = 0
+    print("The chance of victory is negligible (<0.01%)")
 if defenceWins != 0:
     expectedDefendersStanding = defendersRemaining/defenceWins
 else:
     expectedDefendersStanding = 0
+    print("The chance of defeat is negligible (<0.01%)")
 print(str((victoryChance)*100) + "%")
 print("Attackers left:" + str(expectedAttackersStanding))
 print("Defenders left:" + str(expectedDefendersStanding))
